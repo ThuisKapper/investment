@@ -1,7 +1,7 @@
 {
   "main.css": "/investment/static/css/main.9cf82ad6.chunk.css",
-  "main.js": "/investment/static/js/main.fc4cc2b8.chunk.js",
-  "main.js.map": "/investment/static/js/main.fc4cc2b8.chunk.js.map",
+  "main.js": "/investment/static/js/main.2fcd9d9a.chunk.js",
+  "main.js.map": "/investment/static/js/main.2fcd9d9a.chunk.js.map",
   "static/css/1.26382abf.chunk.css": "/investment/static/css/1.26382abf.chunk.css",
   "static/js/1.02224932.chunk.js": "/investment/static/js/1.02224932.chunk.js",
   "static/js/1.02224932.chunk.js.map": "/investment/static/js/1.02224932.chunk.js.map",
@@ -10,6 +10,6 @@
   "static/css/1.26382abf.chunk.css.map": "/investment/static/css/1.26382abf.chunk.css.map",
   "static/css/main.9cf82ad6.chunk.css.map": "/investment/static/css/main.9cf82ad6.chunk.css.map",
   "index.html": "/investment/index.html",
-  "precache-manifest.86232d700ca9fd850106789b1fba7a86.js": "/investment/precache-manifest.86232d700ca9fd850106789b1fba7a86.js",
+  "precache-manifest.d03997532296478b67890efcdd50baed.js": "/investment/precache-manifest.d03997532296478b67890efcdd50baed.js",
   "service-worker.js": "/investment/service-worker.js"
 }
