@@ -1,1 +1,0 @@
-{"version":3,"sources":["/Users/bernardusmolkenboer/Desktop/whitepaper/src/components/App.css"],"names":[],"mappings":"AACA,WAAY,wBAAyB,CACrC,SAAU,UAAA,CAAY,cAAe","file":"main.e076e8f2.chunk.css","sourcesContent":["/* Styles go here */\n.color-nav {background-color: #3cb371; }\n#account {color:#fff; font-size:11px;}\n"]}
