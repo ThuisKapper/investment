@@ -1,0 +1,29 @@
+/* Styles go here */
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+	background:#fff !important;
+}
+::-webkit-scrollbar-thumb {
+    background: #3cb371;
+	border:0;
+}
+::-webkit-scroll-thumb:hover {background:#3cb371}
+::-webkit-scrollbar-track {
+	background:#fff;
+}
+
+#page-wrap {
+  padding-bottom: 10px;
+}
+.color-nav {background-color: #3cb371; }
+#account {color:#fff; font-size:11px; }
+#content-placeholder {padding:80px 20px 20px 20px;}
+h1 {font-size:26px;font-family: 'Roboto', sans-serif; font-weight:bold;}
+h2 {font-size:23px;font-family: 'Roboto', sans-serif; font-weight:bold; margin-top:60px;}
+h3 {font-size:20px;font-family: 'Roboto', sans-serif; font-weight:bold;}
+p, body {font-family: 'Roboto', sans-serif; font-size:16px; line-height:28px;}
+#home_logo {position:relative; bottom:30px; left:-5px;}
