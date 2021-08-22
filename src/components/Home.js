@@ -51,7 +51,7 @@ export default function Home() {
 
 <strong>“ThuisKapper” in this meaning stands for “ThuisKapper.app”, a commonwealth of Purmerend corporation.</strong><br />
 <strong>“ThuisKapper Platform” means the platform and applications which are publishing on the Apple AppStore and Google Play.</strong><br />
-<strong>“User” references to any individual and or entity using the ThuisKapper platform or Web3 application.</strong><br />
+<strong>“User” references to any individual and or entity using the ThuisKapper platform or Web3 application.</strong><br />s
 <h3>LEGAL DISCLAIMER</h3>
 
 <p>This Whitepaper is for all general information purposes about our ThuisKapper.app Project. It does not include financial advise or recommendations or any form of solicitation. For all information published over time, ThuisKapper.app remains the right to update the information provided by our company.</p>
