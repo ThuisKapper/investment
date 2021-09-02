@@ -153,45 +153,48 @@ class App extends Component {
       this.updateNet()
       content = (
         <div>
-          <strong>Purchase TKT For adress:</strong>
+          <strong>Connected with adress:</strong>
           <span class="eth_adres">{this.state.account}</span>
 
             <form method="_POST">
-              <div className="flex">
-                <div class="flex_1">
-                  <input type="radio" name="custom"  />
+              <div className="pmHolder">
+                <div className="pm pm_crypto">
+                  <img src="https://cdn.thuiskapper.app/images/payment-bitcoin.png" />
+                  <div>
+                    <strong>Complete your Payment with</strong>
+                    <span>Cryptocurrency</span>
+                  </div>
                 </div>
-                <div class="flex_5">
-                  <span>Buy Through iDeal</span>
-                </div>
-                <div class="flex_1">
-                  <input type="radio" name="custom"  />
-                </div>
-                <div class="flex_5">
-                  <span>Buy with Crypto</span>
+                <div className="pm pm_paypal">
+                  <img src="https://cdn.thuiskapper.app/images/payment-paypal.png" />
+                  <div>
+                    <strong>Use online payment method</strong>
+                    <span>PayPal</span>
+                  </div>
                 </div>
               </div>
-
-                <div className="flex">
-                  <div class="flex_1">
-                    <input type="radio" name="custom"  />
-                  </div>
-                  <div class="flex_5">
-                    <span>Buy Through Creditcard</span>
-                  </div>
-                  <div class="flex_1">
-                    <input type="radio" name="custom"  />
-                  </div>
-                  <div class="flex_5">
-                    <span>Buy Through iDeal</span>
+              <div className="pmHolder">
+                <div className="pm pm_ideal">
+                  <img src="https://cdn.thuiskapper.app/images/payment-ideal.png" />
+                  <div>
+                    <strong>Dutch Payment Method</strong>
+                    <span>iDeal</span>
                   </div>
                 </div>
-
-                  <input type="number" className="efix" placeholder="Enter the amount of TKT you want to purchase" onChange={this._addTestAlert} value={ this.state.tktWaarde } ref="waarde" name="waarde" />
-                  <input type="submit" value="Purchase TKT" />
+                <div className="pm pm_creditcard">
+                  <img src="https://cdn.thuiskapper.app/images/payment-creditcard.png" />
                   <div>
-                  <span  className="buy_amount">{this.state.content}</span>
+                    <strong>Purchase through Creditcard</strong>
+                    <span>Credit or Debit card</span>
                   </div>
+                </div>
+              </div>
+              <input type="hidden" name="selected_optie" name="payment_method" />
+              <input type="number" className="efix" placeholder="Enter the amount of TKT you want to purchase" onChange={this._addTestAlert} value={ this.state.tktWaarde } ref="waarde" name="waarde" />
+              <input type="submit" value="Purchase TKT" />
+              <div>
+                <span  className="buy_amount">{this.state.content}</span>
+              </div>
           </form>
         </div>
       )

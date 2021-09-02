@@ -29,8 +29,8 @@ p, body {font-family: 'Roboto', sans-serif; font-size:16px; line-height:28px;}
 #home_logo {position:relative; bottom:30px; left:-5px;}
 .wallet_adres {margin-top:10px; margin-bottom:40px; padding:20px; background:#efefef;}
 .wallet_adres span {font-size:18px;}
-.flex_1 {flex:1; padding:10px 0;}
-.flex_5 {flex:6;}
+.flex_1 {flex:1; padding:10px 0;  background:#fff; padding:10px;}
+.flex_5 {flex:6; background:#fff; padding:10px;}
 .flex {display:flex; margin-top:20px; width:100%;}
 form {margin-top:20px;}
 input[type="submit"], .wallet_connect {background:orange; border:0; padding:10px;
@@ -41,3 +41,11 @@ input {width:100%; flex:1; margin:10px 0; }
 .wallet_connect {background:#3cb371; color:#fff; width:48%; flex:1; box-shadow:0 3px 1px #359a62; margin:10px 0;}
 .eth_adres {font-size:14px !important; display:block; margin:5px 0; background:#fff; text-align:center; padding:5px;}
 .addTkt {margin-left:20px; background:#fff; border:0; color:#666; font-size:13px; padding:8px 15px; box-shadow: 1px 3px 1px #ccc; border-radius:6px; }
+.pm img {flex:1; margin-right:30px;}
+.pm div {flex:5}
+.pm>div>strong { display:block; width:100%; font-size:14px; margin:0; line-height:25px; margin-top:10px !important;}
+.pm>div>span {display:block;  width:100; font-size:13px; margin:0; line-height:25px;}
+.pmHolder {display:flex; width:100%;}
+.pm {width:50%; display:flex; margin:15px 0; border-radius:5px;  background:#fff; border:1px solid transparent;}
+.pm:hover {border:1px solid #359a62; cursor:pointer;}
+.pm:nth-child(odd) {margin-right:30px;}
