@@ -46,12 +46,11 @@ export default function Home() {
           <p>Information following a.s.a.p.</p>
           <h2>Legal Disclaimer</h2>
 <h3>DEFINITIONS</h3>
-<p>DAO (Decentralized Autonomous Organization) means that the organization represented by a series of smart contracts publishing on the BSC (Binance Smart Chain).</p>
-<p>Which ,when launched will be eventually controlled by the users of the ThuisKapper Platform.</p>
+<p>DAO (Decentralized Autonomous Organization) means that the organization represented by a series of smart contracts publishing on the BSC (Binance Smart Chain). Which, when launched will be eventually controlled by the users of the ThuisKapper Platform.</p><br />
 
 <strong>“ThuisKapper” in this meaning stands for “ThuisKapper.app”, a commonwealth of Purmerend corporation.</strong><br />
-<strong>“ThuisKapper Platform” means the platform and applications which are publishing on the Apple AppStore and Google Play.</strong><br />
-<strong>“User” references to any individual and or entity using the ThuisKapper platform or Web3 application.</strong><br />s
+<strong>“ThuisKapper Platform” means the platform and applications which are published through Desktop or Mobile devices, aswell as on the Apple AppStore and Google Play.</strong><br />
+<strong>“User” references to any individual and or entity using the ThuisKapper platform or Web3 application.</strong><br /><br />
 <h3>LEGAL DISCLAIMER</h3>
 
 <p>This Whitepaper is for all general information purposes about our ThuisKapper.app Project. It does not include financial advise or recommendations or any form of solicitation. For all information published over time, ThuisKapper.app remains the right to update the information provided by our company.</p>
