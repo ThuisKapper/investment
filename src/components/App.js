@@ -157,36 +157,32 @@ class App extends Component {
           <span class="eth_adres">{this.state.account}</span>
 
             <form method="_POST">
-              <div className="pmHolder">
-                <div className="pm pm_crypto">
-                  <img src="https://cdn.thuiskapper.app/images/payment-bitcoin.png" />
-                  <div>
-                    <strong>Complete your Payment with</strong>
-                    <span>Cryptocurrency</span>
-                  </div>
-                </div>
-                <div className="pm pm_paypal">
-                  <img src="https://cdn.thuiskapper.app/images/payment-paypal.png" />
-                  <div>
-                    <strong>Use online payment method</strong>
-                    <span>PayPal</span>
-                  </div>
+              <div className="pm pm_crypto">
+                <img src="https://cdn.thuiskapper.app/images/payment-bitcoin.png" />
+                <div>
+                  <strong>Complete your Payment with</strong>
+                  <span>Cryptocurrency</span>
                 </div>
               </div>
-              <div className="pmHolder">
-                <div className="pm pm_ideal">
-                  <img src="https://cdn.thuiskapper.app/images/payment-ideal.png" />
-                  <div>
-                    <strong>Dutch Payment Method</strong>
-                    <span>iDeal</span>
-                  </div>
+              <div className="pm pm_paypal">
+                <img src="https://cdn.thuiskapper.app/images/payment-paypal.png" />
+                <div>
+                  <strong>Use online payment method</strong>
+                  <span>PayPal</span>
                 </div>
-                <div className="pm pm_creditcard">
-                  <img src="https://cdn.thuiskapper.app/images/payment-creditcard.png" />
-                  <div>
-                    <strong>Purchase through Creditcard</strong>
-                    <span>Credit or Debit card</span>
-                  </div>
+              </div>
+              <div className="pm pm_ideal">
+                <img src="https://cdn.thuiskapper.app/images/payment-ideal.png" />
+                <div>
+                  <strong>Dutch Payment Method</strong>
+                  <span>iDeal</span>
+                </div>
+              </div>
+              <div className="pm pm_creditcard">
+                <img src="https://cdn.thuiskapper.app/images/payment-creditcard.png" />
+                <div>
+                  <strong>Purchase through Creditcard</strong>
+                  <span>Credit or Debit card</span>
                 </div>
               </div>
               <input type="hidden" name="selected_optie" name="payment_method" />
