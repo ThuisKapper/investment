@@ -65,10 +65,15 @@ class App extends Component {
       errorMessage: '',
       net: '',
       account: '',
+      cractive: false,
+      ccactive: false,
+      idactive: false,
+      ppactive: false,
       postCount: 0,
       posts: [],
       loading: true,
       tktWaarde: '',
+      paymentOpt: '',
       message: true,
       errorMessage: '',
       web3Provider: '',
@@ -87,13 +92,41 @@ class App extends Component {
 
   }
 
-    _connectWallet = () =>  {
-      this.loadWeb3()
-      this.loadBlockchainData()
-        this.setState({
-          isToggleOn: "Connected"
-        })
+  _connectWallet = () =>  {
+    this.loadWeb3()
+    this.loadBlockchainData()
+      this.setState({
+        isToggleOn: "Connected"
+      })
+  }
+  _setPaymentCC = (childData) =>  {
+      this.setState({
+        paymentOpt: childData
+      })
+      if(childData === "creditcard") {
+        const currentState = this.state.ccactive;
+        this.setState({ ccactive: !currentState, idactive: false, ppactive: false, cractive: false });
+
     }
+    if (childData === "ideal"){
+
+      const currentState = this.state.idactive;
+      this.setState({ ccactive: false, idactive: !currentState, ppactive: false, cractive: false });
+
+    }
+    if (childData === "paypal"){
+
+      const currentState = this.state.ppactive;
+      this.setState({ ccactive: false, idactive: false, ppactive: !currentState, cractive: false });
+
+    }
+    if (childData === "crypto"){
+
+      const currentState = this.state.ccactive;
+      this.setState({ ccactive: false, idactive: false, ppactive: false, cractive: !currentState });
+
+    }
+  }
 
     async updateNet () {
       const provider = window.web3.currentProvider
@@ -154,43 +187,45 @@ class App extends Component {
       content = (
         <div>
           <strong>Connected with adress:</strong>
-          <span class="eth_adres">{this.state.account}</span>
+          <span className="eth_adres">{this.state.account}</span>
 
-            <form method="_POST">
-              <div className="pm pm_crypto">
+            <form>
+              <div className={this.state.cractive ? 'pm pm_active': 'pm'}  onClick={()=>{this._setPaymentCC("crypto")}}>
                 <img src="https://cdn.thuiskapper.app/images/payment-bitcoin.png" />
                 <div>
                   <strong>Complete your Payment with</strong>
                   <span>Cryptocurrency</span>
                 </div>
               </div>
-              <div className="pm pm_paypal">
+              <div className={this.state.ppactive ? 'pm pm_active': 'pm'}  onClick={()=>{this._setPaymentCC("paypal")}}>
                 <img src="https://cdn.thuiskapper.app/images/payment-paypal.png" />
                 <div>
                   <strong>Use online payment method</strong>
                   <span>PayPal</span>
                 </div>
               </div>
-              <div className="pm pm_ideal">
+              <div className={this.state.idactive ? 'pm pm_active': 'pm'} onClick={()=>{this._setPaymentCC("ideal")}}>
                 <img src="https://cdn.thuiskapper.app/images/payment-ideal.png" />
                 <div>
                   <strong>Dutch Payment Method</strong>
                   <span>iDeal</span>
                 </div>
               </div>
-              <div className="pm pm_creditcard">
+              <div className={this.state.ccactive ? 'pm pm_active': 'pm'}  onClick={()=>{this._setPaymentCC("creditcard")}}>
                 <img src="https://cdn.thuiskapper.app/images/payment-creditcard.png" />
                 <div>
                   <strong>Purchase through Creditcard</strong>
                   <span>Credit or Debit card</span>
                 </div>
               </div>
-              <input type="hidden" name="selected_optie" name="payment_method" />
-              <input type="number" className="efix" placeholder="Enter the amount of TKT you want to purchase" onChange={this._addTestAlert} value={ this.state.tktWaarde } ref="waarde" name="waarde" />
-              <input type="submit" value="Purchase TKT" />
+              <input type="hidden" required name="bsc_adres" value={this.state.account} />
+              <input type="hidden" required name="selected_optie" value={this.state.paymentOpt} />
+              <input type="number" required className="efix" placeholder="Enter the amount of TKT you want to purchase" onChange={this._addTestAlert} value={ this.state.tktWaarde } ref="waarde" name="waarde" />
+
               <div>
                 <span  className="buy_amount">{this.state.content}</span>
               </div>
+              <input type="submit" value="Purchase TKT" />
           </form>
         </div>
       )
