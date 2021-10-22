@@ -14,7 +14,7 @@ export default function Home() {
 
       <div >
         <div style={whitepaperStyle}>
-          <h1 className="text-5xl font-bold">Whitepaper ThuisKapperToken (TKT)</h1>
+          <h1 className="text-4xl font-bold">Whitepaper ThuisKapper Token (TKT)</h1>
           <p className="leading-10 my-12 text-2xl">ThuisKapperTokens (TKT), a new cryptocurrency created to represent and support the production and promotion of our ThuisKapper.app web- platform and iOS and Android application. Our platform is created for mobile barbers and hairdressers to seek and find clients near their location in The Netherlands.</p>
           <p className="leading-8 my-6 text-xl">This document will relay all information about the use cases of our TKT, including it’s structure, distribution, utility and timeline’s for our planned development. Overtime changes and updates will be featured in this document which is available at: <a href="https://tkt.thuiskapper.app" title="URL of this document" className="text-green-600 font-bold hover:text-green-900">https://tkt.thuiskapper.app</a>.</p>
 
