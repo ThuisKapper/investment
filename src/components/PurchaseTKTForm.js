@@ -68,28 +68,28 @@ class PurchaseTKTForm extends Component {
     const { payment_opt, amount_tkt, cractive, paymentOpt } = this.state
     return(
 <div>
-  <div className={cractive ? 'pm pm_active': 'pm'}  onClick={()=>{this._setPaymentCC("crypto")}}>
+  <div className={cractive ? 'pm pm_active w-full lg:w-5/12': 'pm w-full lg:w-5/12'}  onClick={()=>{this._setPaymentCC("crypto")}}>
     <img src="https://cdn.thuiskapper.app/images/payment-bitcoin.png" alt="Buy with crypto"  />
     <div>
       <strong>Complete your Payment with</strong>
       <span>Cryptocurrency</span>
     </div>
   </div>
-  <div className={this.state.ppactive ? 'pm pm_active': 'pm'}  onClick={()=>{this._setPaymentCC("paypal")}}>
+  <div className={this.state.ppactive ? 'pm pm_active w-full lg:w-5/12': 'pm w-full lg:w-5/12'}  onClick={()=>{this._setPaymentCC("paypal")}}>
     <img src="https://cdn.thuiskapper.app/images/payment-paypal.png" alt="Buy with paypal"  />
     <div>
       <strong>Use online payment method</strong>
       <span>PayPal</span>
     </div>
   </div>
-  <div className={this.state.idactive ? 'pm pm_active': 'pm'} onClick={()=>{this._setPaymentCC("ideal")}}>
+  <div className={this.state.idactive ? 'pm pm_active w-full lg:w-5/12': 'pm w-full lg:w-5/12'} onClick={()=>{this._setPaymentCC("ideal")}}>
     <img src="https://cdn.thuiskapper.app/images/payment-ideal.png" alt="Buy with iDeal"  />
     <div>
       <strong>Dutch Payment Method</strong>
       <span>iDeal</span>
     </div>
   </div>
-  <div className={this.state.ccactive ? 'pm pm_active': 'pm'}  onClick={()=>{this._setPaymentCC("creditcard")}}>
+  <div className={this.state.ccactive ? 'pm pm_active w-full lg:w-5/12': 'pm w-full lg:w-5/12'}  onClick={()=>{this._setPaymentCC("creditcard")}}>
     <img src="https://cdn.thuiskapper.app/images/payment-creditcard.png" alt="Buy with Creditcard" />
     <div>
       <strong>Purchase through Creditcard</strong>

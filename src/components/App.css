@@ -43,7 +43,7 @@ input {width:100%; flex:1; margin:10px 0; }
 .pm>div>strong { display:block; width:100%; font-size:14px; margin:0; line-height:25px; margin-top:10px !important;}
 .pm>div>span {display:block;  width:100; font-size:13px; margin:0; line-height:25px;}
 .pmHolder {display:flex; width:100%;}
-.pm {width:100%; display:flex; margin:15px 0; border-radius:5px;  background:#fff; border:0px solid transparent;}
+.pm {display:inline-flex; margin:15px 0; border-radius:5px;  background:#fff; border:0px solid transparent;}
 .pm:hover {border:1px solid #359a62; cursor:pointer;}
 .pm:nth-child(odd) {margin-right:30px;}
 .pm_active {border:2px solid #3cb371;}
