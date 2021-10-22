@@ -44,7 +44,7 @@ export default function Home() {
 
           <h2 className="text-3xl font-bold">TKT Liquidity Pool</h2>
           <ul className="mb-12 w-full my-4 mb-10 relative">
-          <li className="w-full leading-8 text-xl w-full bg-gray-100 p-8  m-auto text-center"><strong className="text-center text-lg">TKT Contract Adres (BSC Scan): </strong><span className="block">0x8a8d90d6b15cb15a5921884bec1c5bb9bfbf22f1</span></li>
+          <li className="w-full leading-8 w-full bg-gray-100 p-8  m-auto text-center"><strong className="text-center text-lg">TKT Contract Adres (BSC Scan): </strong><span className="block sm:text-sm md:text-lg">0x8a8d90d6b15cb15a5921884bec1c5bb9bfbf22f1</span></li>
           </ul>
 
           <h2 className="text-3xl font-bold">Token Distribution</h2>
