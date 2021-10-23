@@ -4,6 +4,7 @@ import axios from 'axios'
 class PurchaseTKTForm extends Component {
   constructor(props) {
     super(props)
+
     this.state = {
       bsc_adres: this.props.dataFromParent,
       content: '',
@@ -24,13 +25,7 @@ class PurchaseTKTForm extends Component {
   submitHandler = e => {
     e.preventDefault()
     console.log(this.state)
-    axios.post('https://www.thuiskapper.app/payment/test', this.state)
-      .then(response => {
-        console.log(response)
-      })
-      .catch(error => {
-        console.log(error)
-      })
+    window.location.href = "https://www.thuiskapper.app/purchase_tkt?payment="+this.state.paymentOpt+"&bsc_address="+this.state.bsc_adres+"&amount="+this.state.tktWaarde;
   }
 
   _setPaymentCC = (childData) =>  {
@@ -105,7 +100,8 @@ class PurchaseTKTForm extends Component {
           <div>
             <span className="buy_amount">{this.state.content}</span>
           </div>
-          <input type="submit" value="Purchase TKT" />
+          <input type="submit" value="Purchase TKT" id="btn" value="Purchase TKT" />
+          <p id="pay"></p>
       </form>
       </div>
     )

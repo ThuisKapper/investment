@@ -6,6 +6,7 @@ import { ReactComponent as SchoolIcon } from "./thuiskapper-svg.svg";
 import './VerticalTimeline.css';
 import './VerticalTimelineElement.css';
 
+
 export default function Home() {
   let workIconStyles = {background: "#3cb371"};
   let schoolIconStyles = {background: "#3cb371"};
