@@ -164,7 +164,7 @@ class App extends Component {
         <div id="outer-container">
           <Navbar account={this.state.account} />
           <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
-          <div className="p-6 lg:p-20">
+          <div className="pt-20 p-6 lg:p-20">
             <div className="wallet_adres">
               <button type="submit" className="wallet_connect" onClick={this._connectWallet}>
                 {this.state.isToggleOn ? 'Connected ' : 'Connect to your Wallet'}

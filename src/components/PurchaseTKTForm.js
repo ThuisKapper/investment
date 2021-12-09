@@ -32,10 +32,6 @@ class PurchaseTKTForm extends Component {
       this.setState({
         paymentOpt: childData
       })
-      if(childData === "creditcard") {
-        const currentState = this.state.ccactive;
-        this.setState({ ccactive: !currentState, idactive: false, ppactive: false, cractive: false });
-    }
     if (childData === "ideal"){
       const currentState = this.state.idactive;
       this.setState({ ccactive: false, idactive: !currentState, ppactive: false, cractive: false });
@@ -67,7 +63,7 @@ class PurchaseTKTForm extends Component {
     <img src="https://cdn.thuiskapper.app/images/payment-bitcoin.png" alt="Buy with crypto"  />
     <div>
       <strong>Complete your Payment with</strong>
-      <span>Cryptocurrency</span>
+      <span>Cryptocurrency (Comming soon)</span>
     </div>
   </div>
   <div className={this.state.ppactive ? 'pm pm_active w-full lg:w-5/12': 'pm w-full lg:w-5/12'}  onClick={()=>{this._setPaymentCC("paypal")}}>
@@ -82,13 +78,6 @@ class PurchaseTKTForm extends Component {
     <div>
       <strong>Dutch Payment Method</strong>
       <span>iDeal</span>
-    </div>
-  </div>
-  <div className={this.state.ccactive ? 'pm pm_active w-full lg:w-5/12': 'pm w-full lg:w-5/12'}  onClick={()=>{this._setPaymentCC("creditcard")}}>
-    <img src="https://cdn.thuiskapper.app/images/payment-creditcard.png" alt="Buy with Creditcard" />
-    <div>
-      <strong>Purchase through Creditcard</strong>
-      <span>Credit or Debit card</span>
     </div>
   </div>
 
