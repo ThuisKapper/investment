@@ -164,6 +164,12 @@ class App extends Component {
         <div id="outer-container">
           <Navbar account={this.state.account} />
           <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
+          <div className="pt-20 p-6 lg:p-20 pb-0">
+            <h2 className="text-3xl font-bold mb-3">Purchase ThuisKapperToken</h2>
+            <p className="leading-8 my-6 text-xl">To purchase on tkt.thuiskapper.app you need to make sure you have a web3 wallet
+              or application connected to our platform. The pre-sale of TKT will end on July 2022.</p>
+
+          </div>
           <div className="pt-20 p-6 lg:p-20">
             <div className="wallet_adres">
               <button type="submit" className="wallet_connect" onClick={this._connectWallet}>

@@ -49,8 +49,34 @@ export default function Home() {
           </ul>
 
           <h2 className="text-3xl font-bold">Token Distribution</h2>
-          <p className="leading-8 my-6 text-xl">Initial Pre-Sale will be valued at 0,08$ per TKT and there will be a limited supply available through the pre-sale which will be 2,000,000 TKT tokens. After the presale we will provide the liquidity and will slowly bring 8,000,000 TKT to the market in late 2021 / 2022.</p>
-          <p className="leading-8 my-6 text-xl">We will keep 20,000,000 tokens aside each kept on different adreses (10M e/a) for future extension to other country’s and development purposes. When we have more information about expansion we will update our white paper to clarify our business progress.</p>
+            <p className="leading-8 my-6 text-xl">Initial pre-sale will be valued at 0,08$ per TKT and there will be a limited supply available where the price will be increasing over time based on the amount sold. After the presale we will provide the liquidity and will slowly bring the rest of the TKT to the market in late 2022.</p>
+            <p className="leading-8 my-6 text-xl">Tokens which will not be sold through our pre-sale will be used for future expansion of our company to different countries. When we have more information about expansion we will update our white paper to clarify our business progress.</p>
+
+
+        <h2 className="text-3xl font-bold">Token Cap / Pricing</h2>
+        <strong>Current cap: 0 - 100K (0,08$ e.a.)</strong>
+        <p className="leading-8 my-6 text-xl">
+            <div className="flex mb-1">
+            <div className="flex-1">- 0 - 100K</div>              <div className="flex-1">-> 0,08 cent per TKT.</div>
+            </div><div className="flex mb-1">
+            <div className="flex-1">- 100k - 200K</div>        <div className="flex-1">-> 0,10 cent per TKT.</div>
+            </div><div className="flex mb-1">
+            <div className="flex-1">- 200k - 300K</div>       <div className="flex-1">-> 0,12 cent per TKT.</div>
+            </div><div className="flex mb-1">
+            <div className="flex-1">- 300k - 500K</div>        <div className="flex-1">-> 0,14 cent per TKT.</div>
+            </div><div className="flex mb-1">
+            <div className="flex-1">- 500k - 1M</div>           <div className="flex-1">-> 0,19 cent per TKT.</div>
+            </div><div className="flex mb-1">
+            <div className="flex-1">- 1M - 2M</div>                <div className="flex-1">-> 0,22 cent per TKT.</div>
+            </div><div className="flex mb-1">
+            <div className="flex-1">- 2M - 5M</div>                <div className="flex-1">-> 0,25 cent per TKT.</div>
+            </div><div className="flex mb-1">
+            <div className="flex-1">- 5M - 10M</div>              <div className="flex-1">-> 0,30 cent per TKT.</div>
+            </div><div className="flex mb-1">
+            <div className="flex-1">- 10M - 20M</div>           <div className="flex-1">-> 0,35 cent per TKT.</div>
+            </div><div className="flex mb-1">
+            <div className="flex-1">- 20M - 30M</div>             <div className="flex-1">-> 0,42 cent per TKT.</div></div></p>
+
 
         <h2 className="text-3xl font-bold">Project Development</h2>
         <div className=" bg-gray-100 padding-10">

@@ -2,11 +2,11 @@ let timelineElements = [
 {
   id: 1,
   title: "Full Attention on Marketing and Web3 Development",
-  location: "ICO / Marketing",
+  location: "ICO / Pre-Sale TKT",
   description:
-    "Full focus on on the growth of our platform, working on our platform and search for investors to be part of the company.",
+    "Full focus on on the growth of our platform, working on our platform and search for investors to be a part of the company.",
   buttonText: "View Backend Projects",
-  date: "Oktober - December 2021",
+  date: "December 21 - July 2022",
   icon: "work",
 },
   {
