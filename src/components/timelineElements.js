@@ -31,6 +31,16 @@ let timelineElements = [
   },
   {
     id: 4,
+    title: "Exchange listing (if possible)",
+    location: "Crypto exchange listing for TKT token",
+    description:
+      "If we do exceed a certain token sale point during the pre- sale, then we will submit the TKT for one of multiple crypto exchanges.",
+    buttonText: "Course Certificate",
+    date: "July / August 2022",
+    icon: "school",
+  },
+  {
+    id: 5,
     title: "Fully Rework the Platform ThuisKapper.app",
     location: "React (Native) Web3 dApp",
     description:
@@ -40,7 +50,7 @@ let timelineElements = [
     icon: "work",
   },
   {
-    id: 5,
+    id: 6,
     title: "Extend to More International Country's",
     location: "Grow the Business",
     description:
@@ -50,7 +60,7 @@ let timelineElements = [
     icon: "school",
   },
   {
-    id: 6,
+    id: 7,
     title: "Webshop For Mobile Hairdressers and Barber Products",
     location: "New crypto- based webshop",
     description:
