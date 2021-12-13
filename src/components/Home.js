@@ -54,7 +54,7 @@ export default function Home() {
 
 
         <h2 className="text-3xl font-bold">Token Cap / Pricing</h2>
-        <strong>Current cap: 0 - 100K (0,08$ e.a.)</strong>
+        <strong>Current cap: 9600 - 100K (0,08$ e.a.)</strong>
         <p className="leading-8 my-6 text-xl">
             <div className="flex mb-1">
             <div className="flex-1">- 0 - 100K</div>              <div className="flex-1">-> 0,08 usd each.</div>
