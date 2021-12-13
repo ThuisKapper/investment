@@ -154,7 +154,7 @@ class App extends Component {
       this.updateNet()
       content = (
         <div>
-          <strong className="text-5xl">Connected with adress:</strong>
+          <strong className="text-4xl">Connected with address:</strong>
           <span className="eth_adres">{this.state.account}</span>
             <PurchaseTKTForm dataFromParent={this.state.account} />
         </div>
