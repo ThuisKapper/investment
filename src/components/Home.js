@@ -105,7 +105,7 @@ export default function Home() {
           </VerticalTimeline>
         </div>
           <h2 className="text-3xl font-bold">Definations</h2>
-          <p className="leading-8 my-6 text-xl">DAO (Deusdralized Autonomous Organization) means that the organization represented by a series of smart contracts publishing on the BSC (Binance Smart Chain). Which, when launched will be eventually controlled by the users of the ThuisKapper Platform.</p><br />
+          <p className="leading-8 my-6 text-xl">DAO (Decentralized Autonomous Organization) means that the organization represented by a series of smart contracts publishing on the BSC (Binance Smart Chain). Which, when launched will be eventually controlled by the users of the ThuisKapper Platform.</p><br />
           <ul className="my-6 ">
           <li className="mb-6"><span className="leading-8 my-6 text-xl"><strong>“ThuisKapper”</strong> in this meaning stands for “ThuisKapper.app”, a commonwealth of Purmerend corporation.</span></li>
           <li className="mb-6"><span className="leading-8 my-6 text-xl"><strong>“ThuisKapper Platform”</strong> means the platform and applications which are published through Desktop or Mobile devices, aswell as on the Apple AppStore and Google Play.</span></li>
